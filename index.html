@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <title>Redesigned Guacamole</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="orb orb-a"></div><div class="orb orb-b"></div>
+  <header class="nav">
+    <a class="brand" href="#top">🥑 <span>redesigned-guacamole</span></a>
+    <nav><a href="#about">About</a><a href="#features">Features</a><a href="#play">Play</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="badge">AN UNNECESSARILY SERIOUS GUACAMOLE EXPERIENCE</div>
+      <h1>Guacamole,<br><span>redesigned.</span></h1>
+      <p class="lead">A tiny, delightfully over-engineered corner of the internet dedicated to one important question: <b>how much better can guacamole get?</b></p>
+      <div class="actions"><a class="button primary" href="#play">Enter the guac lab →</a><a class="button ghost" href="https://github.com/cat-meower/redesigned-guacamole">View source</a></div>
+      <div class="hero-card"><div class="avocado">🥑</div><div><strong>STATUS: EXTREMELY GUACAMOLED</strong><p>Freshly redesigned. Zero unnecessary complexity. Probably.</p></div><span class="pulse"></span></div>
+    </section>
+
+    <section id="about" class="section split">
+      <div><p class="eyebrow">01 / THE IDEA</p><h2>Simple premise.<br>Questionable ambition.</h2></div>
+      <div><p>This project started with an almost suspiciously blank repository and an extremely good name. So instead of leaving it empty, we gave it a personality.</p><p>Everything here is lightweight, static, and intentionally easy to remix. No giant framework. No build step. Just HTML, CSS, and JavaScript doing their little jobs.</p></div>
+    </section>
+
+    <section id="features" class="section">
+      <p class="eyebrow">02 / WHAT'S INSIDE</p><h2>A few buttons that do things.</h2>
+      <div class="grid">
+        <article class="card"><span>🥑</span><h3>Guac Generator</h3><p>Generate a completely arbitrary guacamole personality.</p><button data-action="generate">Generate</button></article>
+        <article class="card"><span>⚡</span><h3>Guac Meter</h3><p>Measure the current guacamole intensity of this website.</p><button data-action="meter">Measure</button></article>
+        <article class="card"><span>🧪</span><h3>Secret Lab</h3><p>There may or may not be a secret mode hiding in here.</p><button data-action="secret">Investigate</button></article>
+      </div>
+    </section>
+
+    <section id="play" class="section lab">
+      <div class="lab-head"><div><p class="eyebrow">03 / THE GUAC LAB</p><h2>Make something green.</h2></div><div id="result" class="result">Waiting for science…</div></div>
+      <div class="slider-wrap"><label for="spice">Spice level <output id="spiceValue">50%</output></label><input id="spice" type="range" min="0" max="100" value="50"></div>
+      <div class="guac-display"><div id="bowl" class="bowl"><div class="guac">🥑</div></div><div><h3 id="verdict">Balanced Guacamole</h3><p id="description">A respectable amount of spice. The guacamole has achieved equilibrium.</p><button class="button primary" id="remix">Remix the guac</button></div></div>
+    </section>
+  </main>
+
+  <footer><span>🥑 redesigned-guacamole</span><span>Made for the fun of it.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
